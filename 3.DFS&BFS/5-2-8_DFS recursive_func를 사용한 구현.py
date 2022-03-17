@@ -23,7 +23,7 @@ graph = [
 
 # 각 노드가 방문된 정보를 list로 표현(1차원 리스트)
 visited = [False] * 9   # 초기값은 (아직 어떤 노드도 방문하지 않았기에) False element로 list 생성 / 저장할 노드 갯수만큼 곱한 것
-# 출력시 : [False, False, False, False, False, False, False, False, False]
+# 출력 : [False, False, False, False, False, False, False, False, False]
 
 # 정의된 DFS 함수 호출
 dfs(graph, 1, visited)
