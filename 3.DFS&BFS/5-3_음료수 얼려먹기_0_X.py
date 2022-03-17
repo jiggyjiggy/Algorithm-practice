@@ -163,7 +163,7 @@
 
 # # 2-2-2_O
 # # DFS
-# # visited 활용 안하고 / matrix의 0, 1로 방문 memo 대체하기 -> 탐색 후 맵의 변형 발생
+# # visited 활용 안하고 / matrix의 0, 1로 visited 대체하기 -> 탐색 후 맵의 변형 발생
 # R, C = map(int, input().split())
 # matrix = [(list(map(int, input()))) for _ in range(R)]
 #
