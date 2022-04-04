@@ -391,3 +391,5 @@
 #
 # print(ice_block_count)
 # # ---
+
+input().split()
