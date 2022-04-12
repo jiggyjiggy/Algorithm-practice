@@ -9,7 +9,7 @@ for i in range(m):
 
 x, k = map(int, input().split())
 
-distance = [INF] * (n+1)
+distance = [INF] * n
 
 def dijkstra(start, end):
     q = []
