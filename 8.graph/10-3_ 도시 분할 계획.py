@@ -19,7 +19,7 @@ v, e = map(int, input().split())
 
 parent = [0] * (v + 1)
 for i in range(1, v + 1):
-    parent[i]
+    parent[i] = i
 
 edges = []
 for _ in range(e):
@@ -29,10 +29,10 @@ for _ in range(e):
 edges.sort()
 
 result = 0
-last = 0
-for edge in edges:
+last = 0    # 최소 신장 트리에 포함되는 간선 중에서 가장 비용이 큰 간선
+for edge in edges:  # 간선을 하나씩 확인하며
     cost, a, b = edge
-    if find_parent(parent, a) != find_parent(parent, b):
+    if find_parent(parent, a) != find_parent(parent, b):    # 사이클이 발생하지 않는 경우에만 집합에 포함
         union_parent(parent, a, b)
         result += cost
         last = cost
