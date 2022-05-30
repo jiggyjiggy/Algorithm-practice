@@ -20,6 +20,25 @@
 # print(len(all_group))
 
 ###
+n = int(input())
+travelers_fearness = list(map(int, input().split()))
+
+travelers_fearness.sort()
+
+max_group = 0
+count = 0
+
+for traveler_fearness in travelers_fearness:
+    count += 1
+    if traveler_fearness <= count:
+        max_group += 1
+        count = 0
+
+print(max_group)
+###
+
+
+###
 # 해설
 n = int(input())
 data = list(map(int, input().split()))
