@@ -39,7 +39,14 @@ print(max_group)
 
 
 ###
-# 해설
+# 입력예시
+# 5
+# 2 3 1 2 2
+#
+# 출력예시
+# 2
+
+# 모범답안
 n = int(input())
 data = list(map(int, input().split()))
 
