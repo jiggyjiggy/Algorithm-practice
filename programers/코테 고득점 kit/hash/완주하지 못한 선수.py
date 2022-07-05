@@ -11,3 +11,14 @@ def solution(participant, completion):
     target = {v:k for k,v in dict_participant.items()}
     answer = target.get(1)
     return answer
+
+
+###
+# 다른 사람 풀이
+import collections
+
+
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
+###
